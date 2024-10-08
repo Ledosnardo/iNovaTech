@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inovatech</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/loja.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>iNovaTech</h1>
+        <button onclick="carrinho()">🛒</button>
+    </header>
+
+    <div class="container" id="container">
+        <div class="product">
+            <img src="../../images/iphone15.png" alt="Imagem iphone 15">
+            <div class="content">
+                <h2>Iphone 15</h2>
+                <button 
+                    onclick="comprar('1','Iphone 15', '5000', '../../images/iphone15.png')"
+                    class="button"
+                >🛒</button>
+                <h3 class="price">R$ 5.000</h3>    
+            </div>
+        </div>
+        <div class="product">
+            <img src="../../images/ipad10.png" alt="Produto 2" >
+            <div class="content">
+                <h2>Ipad </h2>
+                <button 
+                    onclick="comprar('2','Ipad', '2542,90', '../../images/ipad10.png')"
+                    class="button"
+                >🛒</button>
+                <h3 class="price">R$ 2.542,90</h3>
+            </div>
+        </div>
+        <div class="product">
+            <img src="../../images/airpod.png" alt="Produto 2" width="200px">
+            <div class="content">
+                <h2>AirPods Max</h2>
+                <button 
+                    onclick="comprar('3','AirPods Max', '3819,90', '../../images/airpod.png')"
+                    class="button"
+                >🛒</button>
+                <h3 class="price">R$ 3.819,90</h3>
+            </div>
+        </div>
+        <div class="product">
+            <img src="../../images/appleWatch.png" alt="Produto 2" width="250px">
+            <div class="content">
+                <h2>Apple Watch SE</h2>
+                <button 
+                    onclick="comprar('4','Apple Watch SE', '2000,00', '../../images/appleWatch.png')"
+                    class="button"
+                >🛒</button>
+                <h3 class="price">R$ 2.000,00</h3>
+            </div>
+        </div>
+        <div class="product">
+            <img src="../../images/carregador.png" alt="Produto 2" width="250px">
+            <div class="content">
+                <h2>Carregador</h2>
+                <button 
+                    onclick="comprar('5','Carregador', '152,10', '../../images/carregador.png')"
+                    class="button"
+                >🛒</button>
+                <h3 class="price">R$ 152,10</h3>
+            </div>
+        </div>
+
+    </div>
+    <script src="../../js/comprar.js"></script>
+</body>
+</html>

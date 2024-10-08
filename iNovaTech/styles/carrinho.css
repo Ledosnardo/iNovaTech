@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(51,51,51,1);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 80px;
+    margin:10px
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.liCompras{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(126,126,126,1);
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: .6rem;
+    letter-spacing: 2px;
+    width: 50%;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.price h3{
+    margin: 0;
+}
+
+.btnLixeira{
+    font-size: 3rem;
+    background: none;
+    border:none;
+    cursor: pointer;
+    height: 10vh;
+    width: 10%;
+    transition: .3s;
+}
+
+.btnLixeira:hover{
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, .6);
+}
+
+.pagamento{
+    height: 60vh;
+    background-color: rgba(126,126,126,1);
+    width: 22%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.total{
+    background-color: rgb(165, 164, 164);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.total h3{
+    color: rgba(0, 128, 0, .9);
+    font-size: 1.3rem;
+}
+
+.divCEP{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.divCEP input{
+    background: rgb(165, 164, 164);
+    border:none;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+.tipoPagamento{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+}
+
+.tipoPagamento li{
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+.btnContinuar{
+    width: 80%;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 128, 0, .7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnContinuar:hover{
+    box-shadow: 0 0 8px 5px rgb(30, 196, 30);
+}

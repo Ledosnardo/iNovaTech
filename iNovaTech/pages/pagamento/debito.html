@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../..//styles/debito.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debito</title>
+</head>
+<body>
+    <form>
+        <input placeholder="Nome Titular" id="nomeTitular" type="text" maxlength="16" onkeyup="converterMaiscula(this)"/>
+        <div class="cartao" id="cartao">
+            <input placeholder="Código Cartão" id="codigoCartao" type="number"/>
+        </div>
+        <input placeholder="CVV" id="CVV" type="number"/>
+        <button id="btnAprovar">Aprovar compra</button>
+    </form>
+    <script src="../../js/debito.js"></script>
+</body>
+</html>

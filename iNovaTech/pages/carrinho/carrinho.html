@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/carrinho.css" media="screen" />
+    <title>Carrinho</title>
+</head>
+<body>
+    <main>
+        <ul id="listas">
+        </ul>
+        <form class="pagamento">
+            <h1>Carrinho</h1>
+            <div class="divCEP">
+                <label for="cep">Seu CEP</label>
+                <input type="text" id="cep">
+            </div>
+            <ul class="tipoPagamento" id="tipoPagamento">
+                <li>
+                    <input type="radio" id="pix" name="pagamento" value="pix">
+                    <label for="pix">Pix</label>
+                </li>
+                <li>
+                    <input type="radio" id="debito" name="pagamento" value="debito">
+                    <label for="debito">Débito</label>
+                </li>
+                <li>
+                    <input type="radio" id="boleto" name="pagamento" value="boleto">
+                    <label for="boleto">Boleto</label>
+                </li>
+            </ul>
+            <div class="total" id="total">
+                <h2>Total</h2>
+                <h3 id="precoTotalAPagar"></h3>
+            </div>
+            <button class="btnContinuar" id="btnContinuar" disabled="true">Continuar</button>
+        </form>
+    </main>
+
+    <script src="../../js/continuarCompra.js"></script>
+    <script src="../../js/carrinhoDeCompras.js"></script>
+    <script src="../../js/verificaCEP.js"></script>
+</body>
+</html>
